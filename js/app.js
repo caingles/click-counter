@@ -21,3 +21,7 @@ const counter = (type) => {
 decrease.addEventListener("click", () => {
     initialCounter += counter("decrease");
 });
+
+increase.addEventListener("click", () => {
+  initialCounter += counter("increase");
+});

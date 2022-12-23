@@ -18,6 +18,8 @@ const counter = (type) => {
   }
 };
 
+counterShow.textContent = initialCounter;
+
 decrease.addEventListener("click", () => {
   initialCounter += counter("decrease");
   counterShow.textContent = initialCounter;

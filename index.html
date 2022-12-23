@@ -13,12 +13,20 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <div class="">
-      <p>Counter</p>
-      <div class="" id="counterShow">0</div>
-      <button id="decrease">Decrease</button>
-      <button id="reset">Reset</button>
-      <button id="increase">Increase</button>
+    <div class="flex justify-center align-center mt-14">
+      <div class="card w-96 bg-base-300 shadow-xl">
+        <div class="flex justify-center items-center h-[100px]">
+          <h1 id="counterShow" class="font-black text-4xl">0</h1>
+        </div>
+        <div class="card-body">
+          <h2 class="card-title">Contador:</h2>
+          <div class="card-actions justify-between">
+            <button class="btn btn-error" id="decrease">Decrease</button>
+            <button class="btn btn-primary" id="reset">Reset</button>
+            <button class="btn btn-success" id="increase">Increase</button>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

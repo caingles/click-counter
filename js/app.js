@@ -19,13 +19,16 @@ const counter = (type) => {
 };
 
 decrease.addEventListener("click", () => {
-    initialCounter += counter("decrease");
+  initialCounter += counter("decrease");
+  counterShow.textContent = initialCounter;
 });
 
 increase.addEventListener("click", () => {
   initialCounter += counter("increase");
+  counterShow.textContent = initialCounter;
 });
 
 reset.addEventListener("click", () => {
   initialCounter = counter("reset");
+  counterShow.textContent = initialCounter;
 });

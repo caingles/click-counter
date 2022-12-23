@@ -25,3 +25,7 @@ decrease.addEventListener("click", () => {
 increase.addEventListener("click", () => {
   initialCounter += counter("increase");
 });
+
+reset.addEventListener("click", () => {
+  initialCounter = counter("reset");
+});
